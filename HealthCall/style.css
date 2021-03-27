@@ -9,6 +9,14 @@
     grid-template-columns: 2fr 20fr 2fr ;
     
     }
+    .first-container-grid{
+        display: grid; 
+        top:0px;
+        position: absolute;
+        place-items: center;
+        right:20%;
+        grid-template-columns: 1fr 5fr 1fr ;
+    }
     .sara{
         width: 100%;
         height:auto;
@@ -16,15 +24,13 @@
     }
     .main-container{
         position: relative;
-        height: 700px;
+       
     }
 .first-container{
-    top:0px;
-    position: absolute;
+    place-items: center;
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1fr;
-    place-items: center;
-    right:30%;
+
 }
   
     .logo-1{
@@ -88,8 +94,8 @@ line-height: 100%
 }
 
 
-
- @media screen and (max-width: 1300px) and (min-width: 839px) {
+/* 
+ @media screen and (max-width: 1300px) and (min-width: 839px) { */
 /* 
 body{
     background-color: #0E549A;
@@ -103,7 +109,7 @@ body{
     right:30%;
 
 } */
-.title{
+/* .title{
   
     font-family: 'Overpass', sans-serif;
     margin-top: 70px;
@@ -131,7 +137,7 @@ body{
     
     }
 
-}
+} */
 
 .aligner{
     /* position: absolute;
@@ -259,10 +265,10 @@ width: 500px;
 .second-container-title{
     color: #0E549A ;
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Overpass', sans-serif;
 font-weight: bold;
-padding: 60px 0px 40px 0px;
+padding: 20px 0px 20px 0px;
 }
 
 .second-container-circle{
