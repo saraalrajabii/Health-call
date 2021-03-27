@@ -9,6 +9,15 @@
     grid-template-columns: 2fr 20fr 2fr ;
     
     }
+    .flux{
+        display:flex;
+        justify-content: space-between;
+        max-width: 100%;
+        background-image: url("image/main-image-website.png");
+        height: 690px;
+
+    }
+
     .first-container-grid{
         display: grid; 
         top:0px;
@@ -26,34 +35,36 @@
         position: relative;
        
     }
-.first-container{
-    place-items: center;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
+
+    .first-container{
+        margin-top: 100px;
+        margin-right: 300px;
+        place-items: center;
+        display: grid;
+        grid-template-rows:     1fr 1fr 1fr 1fr;
+       max-height: 350px;
+    
+    
 
 }
   
-    .logo-1{
-        position: absolute;
-        width: 250px; 
-        object-position: left top;
-        top: 35px;
-        left: 100px;
-     
+.logo-1{
+
+    margin-top: 40px;
+    max-width: 250px;
+    margin-left: 40px;
+   }
+  
+   .title{
+  
+    font-family: 'Overpass', sans-serif;
+    
+    
+    color: #0E549A ;
+    font-size: 40px;
+    letter-spacing: -1px;
+    line-height: 90%
     }
-  
-
-.title{
-  
-font-family: 'Overpass', sans-serif;
-margin-top: 70px;
-align-items: center;
-text-align: center;
-color: #0E549A ;
-font-size: 50px;
-letter-spacing: -1px;
-line-height: 100%
-}
 .description{
     color: #7C8087;
     font-family: 'Overpass', sans-serif;
@@ -61,18 +72,15 @@ line-height: 100%
     text-align: center;
 
 }
-.main-container-ele4{
-    text-align: center;
-    align-items: center;
-}
 .booking-botton{
-    padding: 20px;
+    padding: 15px;
     background: #C6B373;
     border-radius: 5px;
     color: white;
     border:none;
     margin-bottom: 17px;
     font-size: 18px;
+    
 
 }
 .booking-botton2{
@@ -88,138 +96,30 @@ line-height: 100%
 
 .logo-eon{
     width: 200px;
-    height: 83px;
+    height: 80px;
   
     
 }
 
 
-/* 
- @media screen and (max-width: 1300px) and (min-width: 839px) { */
-/* 
-body{
-    background-color: #0E549A;
-}
-.first-container{
-    top:-10px;
-    position: absolute;
-    display: grid;
-    grid-template-rows: 2fr 1fr 1fr 1fr;
-    place-items: center;
-    right:30%;
 
-} */
-/* .title{
-  
-    font-family: 'Overpass', sans-serif;
-    margin-top: 70px;
-    align-items: center;
-    text-align: center;
-    color: #0E549A ;
-    font-size: 35px;
-    letter-spacing: -1px;
-    line-height: 100%
-    } 
-    .logo-eon{
-        width: 150px;
-        height: 63px;
-      
-        
-    }
-    .booking-botton{
-        padding: 15px;
-        background: #C6B373;
-        border-radius: 5px;
-        color: white;
-        border:none;
-        margin-bottom: 5px;
-        font-size: 10px;
-    
-    }
 
-} */
-
-.aligner{
-    /* position: absolute;
-       
-      
-        top: -50px; */
-        position: absolute;
-    left: 51.75%;
-    right: 7.94%;
-    top: 39.97%;
-    bottom: 77.51%;
-    width: 500px;
-        
-    }
-    
-    
-    .aligner2{
-            position: absolute;
-            bottom:-70px;
-           left:120px;
-            width: 350px;
-    }
 
 
 @media screen and (max-width: 839px) {
     body{
         grid-template-columns: 1fr;
     }
-    .logo{
-        padding-top: 30px;
-        width: 200px;
-        padding-bottom: 20px;
-        padding-left: 50px;
-    }
-    .title-mobile{
-        font-family: 'Overpass', sans-serif;
-        font-weight: bold;
-        align-items: center;
-        text-align: center;
-        color: #0E549A ;
-        left: 0.18%;
-        right: -0.18%;
-        padding-bottom: 10px;
-        font-size: 25px;
-        letter-spacing: -1px;
-    }
+
     .main-container-ele2{
         display: none;
     }
     .main-container-ele3{
         display: none;
     }
-    .description-mobile{
-        color: #7C8087;
-        font-family: 'Overpass', sans-serif;
-        text-align: center;
-        font-size: 16px;
-    }
-    .logo-eon{
-        text-align: center;
-        align-items: center;
-        width: 120px;
-        height: 50px; 
-        justify-content: center;
-        
-    }
-    .aligner2{
-        position: absolute;
-        bottom:-70px;
-       left:120px;
-        width: 250px;
-}
-.aligner{
+
   
-        position: absolute;
-    left: 51.75%;
-    right: 7.94%;
-    top: 39.97%;
-    bottom: 77.51%;
-    width: 20px;
-        
-    }
+
     
 
 }
@@ -234,27 +134,7 @@ height:auto;
 margin-right: 100px;
 position: absolute;
 }
-.aligner{
-/* position: absolute;
-   
-  
-    top: -50px; */
-    position: absolute;
-left: 51.75%;
-right: 7.94%;
-top: 39.97%;
-bottom: 77.51%;
-width: 500px;
-    
-}
 
-
-.aligner2{
-        position: absolute;
-        bottom:-70px;
-       left:120px;
-        width: 350px;
-}
 @media screen and (min-width: 839px) {
 
 }
@@ -321,17 +201,7 @@ justify-content: start;
         
         padding: 50px;
     }
-    .booking-botton-mobile{
-        text-align: center;
-        align-items: center;
-        padding: 15px;
-       justify-content: center;
-        background: #C6B373;
-        border-radius: 5px;
-        color: white;
-        margin-top: 40px;
-        border:none
-    }
+ 
 }
 
 
@@ -533,6 +403,9 @@ bottom: 0px;
    .main-container-ele6-mobile{
     display: none; 
    }
+   .flux-mobile{
+    display: none;   
+   }
   
   
     }
@@ -647,12 +520,7 @@ top: 25%;
             right: 0;
             top:-70px;
         }
-        .aligner{
-            position: absolute;
-            width: 180px;
-            top: -70px;  
-            right :-30px;
-        }
+  
         .main-container{
             display: none;
                 }
@@ -672,13 +540,89 @@ top: 25%;
                     bottom: 10px;
                     top:113px ;  
                 }
-                .aligner2{
-                    position: absolute;
-                    top: 100px;
-                    right:170px;
-                    top:140px ; 
-                    width: 130px;
+       
+           
+            .flux{
+                display: none; 
             }
+            .flux-mobile{
+               width: 100%;
+               background-image: url("image/main-mobile.png");
+            height: 570px; 
+            }
+            .main-mobile{
+                width: 100%;
+            }
+             .first-container-mobile{
+                 padding-top: 60px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+               place-content: center;
+                max-height: 300px; 
+                
+         
+                display: grid; 
+                grid-template-columns: 1fr 7fr 1fr ;
 
+            } 
+            .logo{
+                width: 200px;
+           
+            }
+               
+    .title-mobile{
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+      
+        color: #0E549A ;
+    
+        font-size: 20px;
+        letter-spacing: -1px;
+    }
+    .description-mobile{
+       
+        color: #7C8087;
+        font-family: 'Overpass', sans-serif;
+        text-align: center;
+        font-size: 16px;
+    }
+    .booking-botton-mobile{
+
+        padding: 10px;
+       justify-content: center;
+        background: #C6B373;
+        border-radius: 5px;
+        color: white;
+        margin-top: 20px;
+        border:none
+    }
+    .logo-eon{
+        padding: 20px;
+        width: 130px;
+        height: 50px; 
+    
+        
+    }
+    .first-container-mobile1{
+        width: 20%;
+    }
+    .first-container-mobile2{
+        width: 25%;
+    }
+        
+    .aligner2{
+        position: absolute;
+        top:450px;
+        width: 160px;
+}
+.aligner{
+    position: absolute;
+    width: 120px;
+    top:260px;
+  right: 0%;
+
+}
 
  }
