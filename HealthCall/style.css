@@ -1,0 +1,678 @@
+* {
+    margin :0 ;
+    padding: 0;
+    }
+    body{
+      max-width: 1400px;
+      margin:  0 auto; 
+      display: grid; 
+    grid-template-columns: 2fr 20fr 2fr ;
+    
+    }
+    .sara{
+        width: 100%;
+        height:auto;
+       
+    }
+    .main-container{
+        position: relative;
+        height: 700px;
+    }
+.first-container{
+    top:0px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    place-items: center;
+    right:30%;
+}
+  
+    .logo-1{
+        position: absolute;
+        width: 250px; 
+        object-position: left top;
+        top: 35px;
+        left: 100px;
+     
+    }
+  
+
+.title{
+  
+font-family: 'Overpass', sans-serif;
+margin-top: 70px;
+align-items: center;
+text-align: center;
+color: #0E549A ;
+font-size: 50px;
+letter-spacing: -1px;
+line-height: 100%
+}
+.description{
+    color: #7C8087;
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+.main-container-ele4{
+    text-align: center;
+    align-items: center;
+}
+.booking-botton{
+    padding: 20px;
+    background: #C6B373;
+    border-radius: 5px;
+    color: white;
+    border:none;
+    margin-bottom: 17px;
+    font-size: 18px;
+
+}
+.booking-botton2{
+    padding: 20px;
+    background: #C6B373;
+    border-radius: 5px;
+    color: white;
+    border:none;
+
+    font-size: 18px;
+
+}
+
+.logo-eon{
+    width: 200px;
+    height: 83px;
+  
+    
+}
+
+
+
+ @media screen and (max-width: 1300px) and (min-width: 839px) {
+/* 
+body{
+    background-color: #0E549A;
+}
+.first-container{
+    top:-10px;
+    position: absolute;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    place-items: center;
+    right:30%;
+
+} */
+.title{
+  
+    font-family: 'Overpass', sans-serif;
+    margin-top: 70px;
+    align-items: center;
+    text-align: center;
+    color: #0E549A ;
+    font-size: 35px;
+    letter-spacing: -1px;
+    line-height: 100%
+    } 
+    .logo-eon{
+        width: 150px;
+        height: 63px;
+      
+        
+    }
+    .booking-botton{
+        padding: 15px;
+        background: #C6B373;
+        border-radius: 5px;
+        color: white;
+        border:none;
+        margin-bottom: 5px;
+        font-size: 10px;
+    
+    }
+
+}
+
+.aligner{
+    /* position: absolute;
+       
+      
+        top: -50px; */
+        position: absolute;
+    left: 51.75%;
+    right: 7.94%;
+    top: 39.97%;
+    bottom: 77.51%;
+    width: 500px;
+        
+    }
+    
+    
+    .aligner2{
+            position: absolute;
+            bottom:-70px;
+           left:120px;
+            width: 350px;
+    }
+
+
+@media screen and (max-width: 839px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+    .logo{
+        padding-top: 30px;
+        width: 200px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+    }
+    .title-mobile{
+        font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        color: #0E549A ;
+        left: 0.18%;
+        right: -0.18%;
+        padding-bottom: 10px;
+        font-size: 25px;
+        letter-spacing: -1px;
+    }
+    .main-container-ele2{
+        display: none;
+    }
+    .main-container-ele3{
+        display: none;
+    }
+    .description-mobile{
+        color: #7C8087;
+        font-family: 'Overpass', sans-serif;
+        text-align: center;
+        font-size: 16px;
+    }
+    .logo-eon{
+        text-align: center;
+        align-items: center;
+        width: 120px;
+        height: 50px; 
+        justify-content: center;
+        
+    }
+    .aligner2{
+        position: absolute;
+        bottom:-70px;
+       left:120px;
+        width: 250px;
+}
+.aligner{
+  
+        position: absolute;
+    left: 51.75%;
+    right: 7.94%;
+    top: 39.97%;
+    bottom: 77.51%;
+    width: 20px;
+        
+    }
+    
+
+}
+.main-container-ele6{
+    position: relative;
+    direction: rtl;
+
+}
+.ovel{
+width :200px ;
+height:auto; 
+margin-right: 100px;
+position: absolute;
+}
+.aligner{
+/* position: absolute;
+   
+  
+    top: -50px; */
+    position: absolute;
+left: 51.75%;
+right: 7.94%;
+top: 39.97%;
+bottom: 77.51%;
+width: 500px;
+    
+}
+
+
+.aligner2{
+        position: absolute;
+        bottom:-70px;
+       left:120px;
+        width: 350px;
+}
+@media screen and (min-width: 839px) {
+
+}
+
+.second-container{
+    background-color: white;
+}
+.second-container-title{
+    color: #0E549A ;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Overpass', sans-serif;
+font-weight: bold;
+padding: 60px 0px 40px 0px;
+}
+
+.second-container-circle{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: center;
+ 
+}
+.circle{
+    width: 90%;
+    height: auto;
+}
+.second-container-circle-des{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+   align-items: start;
+   justify-content: start;
+   text-align: start;
+   padding: 50px;
+
+
+}
+
+.circle-des{
+color: #7C8087;
+align-items: start;
+justify-content: start;
+
+}
+@media screen and (min-width: 839px) {
+.second-container-circle-des-mobile{
+    display: none;
+}
+}
+@media screen and (max-width: 839px) {
+    .second-container-circle{
+        display: grid; 
+        grid-template-columns: 1fr ;
+        width: 60%;
+        row-gap: 1em;
+        margin-left: 80px;
+        padding-top: 10px;
+     
+    }
+    .second-container-circle-des{
+        display: none;
+    
+    }
+    .second-container-circle-des-mobile{
+        
+        padding: 50px;
+    }
+    .booking-botton-mobile{
+        text-align: center;
+        align-items: center;
+        padding: 15px;
+       justify-content: center;
+        background: #C6B373;
+        border-radius: 5px;
+        color: white;
+        margin-top: 40px;
+        border:none
+    }
+}
+
+
+.second-container-question{
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr 1fr  ;
+    padding-bottom: 30px;
+    grid-column-gap: 1em;
+}
+.question-image{
+width: 100%;
+height: 100%;
+}
+.question-title{
+    padding-top: 60px;
+    color: #0E549A ;
+/* margin-left: 200px; */
+    font-size: 50px;
+    font-family: 'Overpass', sans-serif;
+font-weight: bold;
+}
+.inner-grid{
+    display: grid; 
+    grid-template-columns: 1fr 7fr  ;
+    /* margin-left: 180px; */
+    /* padding-top: 20px; */
+}
+.true{
+    width: 30px;
+    height: auto;
+}
+.true-note{
+    color: #0E549A ;
+    font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width: 839px) {
+    .second-container-question{
+        display: grid; 
+        grid-template-columns:  1fr ;
+        place-items: center;
+    }
+    .question-title{
+        padding-top: 60px;
+        color: #0E549A ;
+    margin-left: 0px;
+        font-size: 50px;
+        font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    }
+    .inner-grid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        /* margin-left: 10px; */
+        grid-column-gap: 1em;
+        /* padding-top: 20px; */
+        justify-content: center;
+        align-items: center;
+    }
+    .question-image{
+        padding-top: 20px;
+        padding-bottom:20px ;
+        width: 100%;
+        height: auto;
+        }
+        .question-image-div{
+            padding: 20px;
+        }
+}
+
+
+
+.third-container{
+    background-color: #F7F8FA;
+    position: relative;
+    height: 650px;
+ 
+}
+
+/* .third-container-grid{
+  position: absolute;
+} */
+.ovel-half{
+    width: 20%;
+    height: auto;
+  position: absolute;
+ right: 0;
+
+ }
+ .BG{
+ 
+    width: 50%;
+    font-size: 20px;
+    padding: 30px 0px 50px 30px;
+    position: absolute;
+    left: 37%;
+    color:gray;
+    font-family: 'Almarai';
+    top: 25%;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+ }
+ .Doc{
+    position: absolute; 
+    width: 40%;
+    left:100px;
+    top:8%  
+ }
+ .logo-withdoc{
+    position: absolute; 
+    width: 27%;
+    top:10%;
+    right:250px;
+
+ }
+ .DOC-description{
+     color:#979797 ;
+     padding-top: 30px;
+ position: absolute; 
+   /*  font-size: 20px;
+ width: 50%;
+    right:40px;
+    top:40% */
+ }
+ .doc-note{
+    left: 15%;
+    position: absolute;
+    color: #0E549A;
+    bottom: 70px;
+    font-family: 'Almarai';
+    font-style: normal;
+    font-size: 12px;
+    /* top:85%; */
+ }
+ .doc-note2{
+     font-weight: bold;
+     font-family: 'Almarai';
+ }
+ .doc-note-mobile{
+     width: 70%;
+    left: 13%;
+    position: absolute;
+    color: #0E549A;
+    bottom: 60px;
+    font-family: 'Almarai';
+    font-style: normal;
+    font-size: 12px;
+  
+ }
+ .doc-note2-mobile{
+     font-weight: bold;
+     font-family: 'Almarai';
+ }
+
+
+ .forth-container{
+     position: relative;
+  background-color: #0E549A;
+  display: grid;
+  place-items: center;
+  height: 400px;
+  margin-bottom: 50px;
+ 
+ }
+ .forth-container-title{
+    padding: 0px 0px 30px 0px ;
+     color: white;
+     font-family: 'Overpass', sans-serif;
+font-weight: bold;
+align-items: center;
+text-align: center;
+font-size: 40px;
+
+ }
+ .Oval-Copy{
+position: absolute;
+left: 0px;
+width: 70px;
+bottom: 0px;
+
+ }
+
+
+ @media screen and (min-width: 839px) {
+  .third-container-mobile{
+      display: none;
+  }
+   .question-title-mobile{
+    display: none;
+   }
+   .third-container-mobile-part22{
+    display: none;
+   }
+   .main-container-ele6-mobile{
+    display: none; 
+   }
+  
+  
+    }
+
+ @media screen and (max-width: 839px) {
+    .Oval-Copy{
+        width: 20%;
+     } 
+     .forth-container-title{
+        font-size: 30px;
+     }
+     .third-container{
+         display: none;
+     }
+     .third-container-mobile{
+      position: relative;
+      background-color: #F7F8FA;
+      height: 600px;
+    }
+    .ovel-half{
+        width: 50%;
+        height: auto;
+      position: absolute;
+     right: 0;
+    
+     }
+     .logo-withdoc-mobile{
+        position: absolute; 
+        width: 60%;
+        top:15%;
+        left:30px;
+     }
+     .BG-mobile{
+        place-items: center;
+        position: absolute; 
+        border: 5px;
+        align-items: center;
+        font-family: 'Almarai';
+        width: 50%;
+        top:25%;
+        font-size: 16px;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: 5fr 2fr;
+        background-color: white;
+        color: gray;
+        left: 20%;
+      
+     }
+     .DOC-description-mobile{
+        /* color: #979797;
+        position: absolute;
+        font-size: 18px;
+        width: 100%;
+        left: 50px;
+        top: 25%; */
+
+
+        color: #979797;
+position: absolute;
+font-size: 18px;
+width: 90%;
+left: 40px;
+top: 25%;
+     }
+     .Doc-mobile{
+        position: absolute;
+        width: 80%;
+        left: 40px;
+        bottom: 140px;
+          
+     }
+     .third-container-mobile-part22{
+         background-color: white;
+         position: relative;
+         height: 250px;
+         width: 100%;
+
+
+     }
+     .doc-note{
+   font-size: 18px;
+   top: 180px;
+            position: absolute; 
+            color: #0E549A ;
+            font-family: 'Almarai';
+     
+         }
+         .question-title{
+            display: none;
+           }
+           .question-title-mobile{
+            padding: 20px;
+            color: #0E549A ;
+   text-align: center;
+            font-size: 30px;
+            font-family: 'Overpass', sans-serif;
+        font-weight: bold;
+        }
+        .main-container-ele6{
+            display: none;
+        }
+        .main-container-ele6-mobile{
+          position: relative;
+           }
+        
+        .Ooval{
+            position: absolute;
+            padding-top: 5px;
+            width: 100px;
+            height: 140px;
+            right: 0;
+            top:-70px;
+        }
+        .aligner{
+            position: absolute;
+            width: 180px;
+            top: -70px;  
+            right :-30px;
+        }
+        .main-container{
+            display: none;
+                }
+
+                .girl{
+                    top:55px ; 
+                    position: absolute;
+                    width: 400px;
+                right:-50px;
+                
+                }
+                .Rectangle{
+                    position: absolute;
+                    right:180px;
+                    width: 100px;
+                    height: 130px;
+                    bottom: 10px;
+                    top:113px ;  
+                }
+                .aligner2{
+                    position: absolute;
+                    top: 100px;
+                    right:170px;
+                    top:140px ; 
+                    width: 130px;
+            }
+
+
+ }
