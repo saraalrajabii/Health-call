@@ -1,8 +1,8 @@
-// form validation
+
 function validateRegister() {
     const nameReg = /[\u0041-\u005A\u0061-\u007A\u0621-\u064A ]{3,}/
     const emailReq = /\S+@\S+\.\S+/
-    // const phoneReq = /[\+]\d{3}[\-]\d{10}/
+    const phoneReq = /[\+]\d{3}[\-]\d{9}/
 
 	var username, contactInput, contactType;
 
@@ -11,7 +11,7 @@ function validateRegister() {
     contactInput = $('[id$=contact-input]').val()
     contactType = $('#contact-input').get(0).type
 	if (username == null || username == '' || username ==undefined) {
-	    $('#regisErr').addClass('error').text('الاسم مطلوب ');
+	    $('#regisErr').addClass('error').text('الاسم مطلوب');
 	    $('#name').focus();
 	    return false;
     }
@@ -21,7 +21,7 @@ function validateRegister() {
 	    return false;
     }
     else if (selectVal == null || selectVal == '' || selectVal == undefined) {
-        $('#regisErr').addClass('error').text('الرجاء ملئ المعلومات');
+        $('#regisErr').addClass('error').text('الرجاء اختيار طريقه للتواصل');
 	    $('.custom-select__trigger').focus();
 	    return false;
     }
@@ -31,12 +31,12 @@ function validateRegister() {
 	    return false;
     }
     else if (contactType == "email" && !emailReq.test(contactInput)) {
-        $('#regisErr').addClass('error').text('Please add a valid email');
+        $('#regisErr').addClass('error').text('الرجاء وضع بريد الكتروني صحيح');
 	    $('.custom-select__trigger').focus();
 	    return false;
     }
     else if (contactType == "tel" && !phoneReq.test(contactInput)) {
-        $('#regisErr').addClass('error').text('  رقم الهاتف مطلوب');
+        $('#regisErr').addClass('error').text('الرجاء وضع رقم هاتف صحيح');
 	    $('.custom-select__trigger').focus();
 	    return false;
     }
@@ -47,36 +47,34 @@ function validateRegister() {
 
 $(function () {
     $(".booking-botton").click(function () {
-        $(".model").show();
-    })
-    $(".booking-botton-mobile").click(function () {
-        $(".model").show();
-    })
-    $(".booking-botton3").click(function () {
-        $(".model").show();
-    })
-    $(".booking-botton-mobile").click(function () {
-        $(".model").show();
-        
-    })
-    $(".booking-botton2").click(function () {
-        $(".model").show();
-    })
-    $(".booking-botton-mobile1").click(function () {
-        $(".model").show();
-    })
+                $(".model").show();
+            })
+            $(".booking-botton-mobile").click(function () {
+                $(".model").show();
+            })
+            $(".booking-botton3").click(function () {
+                $(".model").show();
+            })
+            $(".booking-botton-mobile").click(function () {
+                $(".model").show();
+                
+            })
+            $(".booking-botton2").click(function () {
+                $(".model").show();
+            })
+            $(".booking-botton-mobile1").click(function () {
+                $(".model").show();
+            })
     $(".close").click(function () {
         $(".model").hide();
         $('.thankyouPage').hide();
         $('#form').show();
         $(".contact-input-div").hide();
         $('#form')[0].reset();
+        $('.custom-option').parent().find('.selected').removeClass('selected')
+        $('.custom-option').eq(0).addClass('selected');
+        $('.custom-select .custom-select__trigger span').text('طريقة التواصل ...') 
     })
-    $(".more_info").click(function() {
-        $('html, body').animate({
-            scrollTop: $(".section_2").offset().top
-        }, 500);
-    });
     $('#form').submit(async function (e) {
         e.preventDefault();
         const nameValue = $("#name-input").val();
@@ -114,7 +112,7 @@ $(function () {
             $(".contact-input-div").show()
             // $('[id$=contact-label]').text("البريد الاكتروني");
             $("#defult").remove(); 
-            $('[id$=contact-input]').attr("placeholder", "Email");
+            $('[id$=contact-input]').attr("placeholder", "البريد الإلكتروني");
             $('[id$=contact-input]').css('direction', 'rtl');
             $('[id$=contact-input]').css('text-align', 'start');
             $('[id$=contact-input]').val('');
@@ -124,7 +122,7 @@ $(function () {
             $(".contact-input-div").show()
             // $('[id$=contact-label]').text("واتس اب");
             $("#defult").remove(); 
-            $('[id$=contact-input]').attr("placeholder", "+971-xxxxxxxxxx");
+            $('[id$=contact-input]').attr("placeholder", "+962-xxxxxxxxxx");
             $('#contact-input').get(0).type = "tel"
             $('[id$=contact-input]').val('');
             $('[id$=contact-input]').css('direction', 'ltr');
@@ -134,7 +132,7 @@ $(function () {
             $(".contact-input-div").show()
             // $('[id$=contact-label]').text("رقم الهاتف");
             $("#defult").remove(); 
-            $('[id$=contact-input]').attr("placeholder", "+971-xxxxxxxxxx");
+            $('[id$=contact-input]').attr("placeholder", "+962-xxxxxxxxxx");
             $('[id$=contact-input]').css('direction', 'ltr');
             $('[id$=contact-input]').css('text-align', 'end');
             $('#contact-input').get(0).type = "tel"
@@ -156,6 +154,9 @@ $(function () {
         $(".model").hide();
         $('#form')[0].reset();
         $(".contact-input-div").hide()
-        $('[id$=contact-input]').val('');   
+        $('[id$=contact-input]').val(''); 
+        $('.custom-option').parent().find('.selected').removeClass('selected')
+        $('.custom-option').eq(0).addClass('selected');
+        $('.custom-select .custom-select__trigger span').text('طريقة التواصل ...')   
     }})
 });

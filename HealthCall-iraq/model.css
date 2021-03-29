@@ -11,15 +11,10 @@
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 3;
 }
-.name-input{
-  font-family: 'Overpass', sans-serif;
-
- }
 
 .model-content {
   display: grid;
- 
-   place-items: center;
+  grid-template-columns: 1fr;
   background-color: #fefefe;
   margin: 5% auto;
   border: 1px solid #888;
@@ -29,10 +24,6 @@
   min-width: 30px;
   /* mobile */
 }
-.center-item{
-  display: grid;
-   place-items: center
-}
 
 @media only screen and (max-width: 930px) {
   .model-content {
@@ -41,77 +32,32 @@
   }
 }
 
+.image_header_countaner img {
+  width: 100%;
+  border-radius: 10px;
+}
+
 .form-grid {
- margin-left: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
   padding-bottom: 50px;
   /* mobile */
 }
 
 @media only screen and (max-width: 930px) {
   .form-grid {
-    grid-template-columns: .7fr;
+    grid-template-columns: 1fr;
     justify-self: center;
   }
 }
-.image_holder img{
-  max-width: 300px;
+input::placeholder {
+  font-family: 'Almarai', sans-serif;
 }
-
-.form-grid .image_holder {
-  grid-column: 2;
-  grid-row: 1;
-  width: 30%;
-  /* mobile */
-}
-
-@media only screen and (max-width: 930px) {
-  .form-grid .image_holder {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .image_holder img{
-    max-width: 250px;
-  }
-}
-
-.form-grid .image_holder img {
-
-
-  border-radius: 15px;
-
-  /* mobile */
-  /* ipad pro*/
-  /* glaxy fold */
-}
-
-
-
-@media only screen and (max-width: 1024px) {
-
-  .image_holder img{
-    max-width: 400px;
-  }
-}
-
-@media only screen and (max-width: 321px) {
-  .form-grid .image_holder img {
-    
-    /* grid-column: 1; */
-
-    align-items: center;
-    /* grid-row: 1; */
-  }
-  .image_holder img{
-    max-width: 250px;
-  }
-}
-
 .form-grid form {
   align-self: center;
   justify-self: center;
   grid-column: 1;
   grid-row: 1;
-
   /* mobile */
   /* ipad pro*/
   /* galaxy fold */
@@ -123,7 +69,7 @@
     grid-row: 2;
     align-self: center;
     justify-self: center;
-    /* padding-right: 0px; */
+    padding-right: 0px;
   }
 }
 
@@ -144,7 +90,7 @@ input[type="text"],
 input[type='email'],
 input[type="tel"],
 select {
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   margin: 18px 0px 8px 0px;
   display: block;
@@ -169,7 +115,7 @@ select:focus {
   input[type='email'],
   input[type="tel"],
   select {
-    width: 70%;
+    width: 100%;
   }
 }
 
@@ -178,7 +124,7 @@ select:focus {
   input[type='email'],
   input[type="tel"],
   select {
-    width: 70%;
+    width: 75%;
   }
 }
 
@@ -187,7 +133,7 @@ select:focus {
   input[type='email'],
   input[type="tel"],
   select {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -215,20 +161,20 @@ input[type="tel"],
 .custom-select-wrapper {
   position: relative;
   user-select: none;
-  width: 70%;
+  width: 100%;
   /* mobile */
   /* ipad pro*/
 }
 
 @media only screen and (max-width: 930px) {
   .custom-select-wrapper {
-    width: 70%;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .custom-select-wrapper {
-    width: 70%;
+    width: 90%;
   }
 }
 
@@ -245,19 +191,14 @@ input[type="tel"],
   outline: none;
   border: 1px solid #471B6B;
 }
-#contact-input{
-  width: 101%;
-  margin-left: 16px;
-}
 
 @media only screen and (max-width: 281px) {
   .custom-select {
-    width: 95%;
+    width: 100%;
   }
 }
 
 .custom-select__trigger {
-
   position: relative;
   display: flex;
   align-items: center;
@@ -267,9 +208,9 @@ input[type="tel"],
   font-weight: 300;
   color: black;
   opacity: 0.6;
-  height: 50px;
+  height: 60px;
   font-family: 'Almarai', sans-serif;
-
+  line-height: 60px;
   background: #ffffff;
   cursor: pointer;
   border-top: none;
@@ -305,6 +246,7 @@ input[type="tel"],
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
+  font-family: 'Almarai', sans-serif;
   pointer-events: none;
   z-index: 2;
 }
@@ -313,19 +255,18 @@ input[type="tel"],
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-}
-input::placeholder {
   font-family: 'Almarai', sans-serif;
 }
+
 .custom-option {
   position: relative;
   display: block;
   padding: 0 22px 0 22px;
   font-size: 22px;
   font-weight: 300;
-  font-family: 'Almarai', sans-serif;
   color: #3b3b3b;
   line-height: 60px;
+  font-family: 'Almarai', sans-serif;
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -347,7 +288,6 @@ input::placeholder {
 }
 
 .arrow {
- direction :'ltr';
   position: relative;
   height: 15px;
   width: 15px;
@@ -367,7 +307,7 @@ input::placeholder {
   bottom: 0px;
   width: 0.15rem;
   height: 100%;
-  /* transition: all 0.5s; */
+  transition: all 0.5s;
 }
 
 .arrow::before {
@@ -381,7 +321,6 @@ input::placeholder {
   transform: rotate(45deg);
   background-color: #471B6B;
 }
-
 
 .open .arrow::before {
   left: -5px;
@@ -403,14 +342,15 @@ input::placeholder {
   background-color: #471B6B;
   color: white;
   font-size: 18px;
+  font-family: 'Almarai', sans-serif;
   border-radius: 12px;
-  padding: 13px 20px;
+  padding: 13px 40px;
   border: none;
-  width: 40%;
+  width: 50%;
   justify-self: center;
-  display: grid;
-  place-items: center
-  /* box-shadow: 3px 3px 3px #888888; */
+  cursor: pointer;
+  box-shadow: #00000029 0px 3px 6px;
+  
 }
 
 @media only screen and (max-width: 321px) {
@@ -418,7 +358,6 @@ input::placeholder {
     font-size: 12px;
     border-radius: 12px;
     padding: 13px 20px;
-    margin-left: 70px;
   }
 }
 
@@ -426,9 +365,8 @@ input::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 2em;
   cursor: pointer;
-
-  text-align: start;
- 
+  padding-right: 30px;
+  line-height: 2;
 }
 
 @media only screen and (max-width: 930px) {
@@ -440,12 +378,13 @@ input::placeholder {
 .thankyouPage {
   display: none;
   font-size: 20px;
+  line-height: 32px;
   text-align: center;
   color: #797979;
   background-color: #fefefe;
   place-self: center;
-  width: auto;
-  padding-right: 70px;
+  width: 50%;
+  padding: 0px 50px;
 }
 
 .errorBlock {
@@ -460,23 +399,6 @@ input::placeholder {
 .error {
   border: 1px dashed red;
   color: red;
-  padding: 5px 0px;
-  display: grid;
-  place-items: center;
-  width: 100%;
+  padding: 5px 10px;
 }
-
-@media only screen and (max-width: 930px) {
-  .error {
-    border: 1px dashed red;
-    color: red;
-    padding: 5px 0px;
-    display: grid;
-    place-items: center;
-    width: 70%;
-    margin-right: 40px;
-  }
-}
-
 /*# sourceMappingURL=model.css.map */
-
