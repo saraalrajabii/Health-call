@@ -65,6 +65,9 @@ $(function () {
             $(".booking-botton-mobile1").click(function () {
                 $(".model").show();
             })
+            $(".booking").click(function () {
+                $(".model").show();
+            })
     $(".close").click(function () {
         $(".model").hide();
         $('.thankyouPage').hide();

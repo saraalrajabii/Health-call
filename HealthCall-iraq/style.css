@@ -376,6 +376,7 @@ height: 100%;
      padding:40px;
      margin-top: 40px;
      color: #7C8087;
+     direction :rtl;
      font-size: 13px;
      font-family: 'Almarai', sans-serif;
      max-height: 200px;
