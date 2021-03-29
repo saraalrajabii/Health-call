@@ -6,10 +6,10 @@
   <meta charset="ut-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="icon" href="image/Healthcall_Logo__1__1-removebg-preview.png">
+  <link rel="icon" href="image/Healthcall Logo_new.png">
   <link rel="stylesheet" href="./model.css">
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100&display=swap" rel="stylesheet">
-  <title>Health call LPs</title>
+  <title>HealthCall - Dubai</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Facebook Pixel Code -->
   <script>
@@ -196,39 +196,44 @@
   <div></div>
   <div class="model" dir="rtl">
     <div class="model-content">
-        <div class="image_header_countaner">
-          <span class="close">x</span>
-            <img src="image/shutterstock_720115051_1-removebg-preview.png" alt="header img"/>
-        </div>
-  
-        <div class="form-grid">
+      <div class="grid"> 
+       <div> <span class="close">x</span></div>
+       <div class="image_holder">
+        <img src="image/shutterstock_720115051_1-removebg-preview.png" alt="header img"/>
+      </div>
+      <div> <div class="form-grid">
+            <!-- <div class="image_holder">
+              <img src="image/shutterstock_720115051_1-removebg-preview.png" alt="header img"/>
+            </div> -->
             <form name="contact-form" id="form">
-                <div>
-                    <label id="name-label" for="name" hidden>الاسم</label>
-                    <input type="text" id="name-input" name="name" placeholder="Name" >
+                <div  class="center-item">
+                    <label id="name-label" for="name" hidden>Name</label>
+                    <input type="text" id="name-input" name="name" placeholder=" Name ">
                 </div>
-                    <div>
+                    <div class="center-item">
                         <div class="custom-select-wrapper">
                             <div class="custom-select">
-                                <div class="custom-select__trigger"><span>
-                                  Way to communicate</span>
-                                    <div class="arrow"></div>
+                        
+                                <div class="custom-select__trigger"><span>Contact Method</span>
+                                  <div class="arrow"></div>
                                 </div>
                                 <div class="custom-options">
                                     <span class="custom-option selected" data-value=""></span>
-                                    <span class="custom-option" data-value="email">Email address</span>
-                                    <span class="custom-option" data-value="whats/app">What's Up</span>
-                                    <span class="custom-option" data-value="phone">Telephone number</span>
+                                    <!-- <span class="custom-option" data-value="email">Email</span> -->
+                                    <span class="custom-option" data-value="whats/app">WhatsApp</span>
+                                    <span class="custom-option" data-value="phone">Phone</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="center-item">
                     <div class="contact-input-div"  style="padding-bottom: 20px; color:#797979">
                         <label for="contact-input" id="contact-label"></label>
                         <input type="" id="contact-input" name="contact-input" placeholder="">
                     </div>
+                    </div>
                     <div class='btn-grid'>
-                        <button class="submit-btn" onclick="return validateRegister();">Send</button>
+                        <button class="submit-btn" onclick="return validateRegister();">Submit</button>
                     </div>
                     <div class="errorBlock">
                         <p id="regisErr"></p>
@@ -236,12 +241,18 @@
             </form>
             <div class="thankyouPage">
                 <div>
-                  Thanks for contacting us, <br>you have taken the first step towards your new smile! <br> A member of the clinic will contact you within the next 24 hours
+                    Thank you for submitting.
+                    <br />You have taken the first step towards your new smile!
+                    <br />
+                    one of the clinic team will contact you within the next 24
+                    hours.
                 </div>
             </div>
         </div> 
     </div>
     </div>
+    </div>
+ 
   <script src="https://code.jquery.com/jquery-3.5.1.js"
     integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="./main.js" charset="utf-8"></script>

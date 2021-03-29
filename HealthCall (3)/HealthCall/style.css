@@ -73,6 +73,7 @@
 
 }
 .booking-botton{
+    cursor: pointer;
     padding: 15px;
     background: #C6B373;
     border-radius: 5px;
@@ -87,6 +88,7 @@
     align-items: center;
 }
 .booking-botton3{
+    cursor: pointer;
     padding: 15px;
     background: #C6B373;
     border-radius: 5px;
@@ -100,6 +102,7 @@
 
 }
 .booking-botton2{
+    cursor: pointer;
     padding: 20px;
     background: #C6B373;
     border-radius: 5px;
@@ -112,7 +115,7 @@ margin-left: 35px;
 
 .logo-eon{
     width: 200px;
-    height: 80px;
+    height: auto;
   
     
 }
@@ -605,7 +608,7 @@ top: 25%;
         font-size: 16px;
     }
     .booking-botton-mobile1{
-
+        cursor: pointer;
         padding: 10px;
        justify-content: center;
         background: #C6B373;
@@ -615,6 +618,7 @@ top: 25%;
         border:none
     }
     .booking-botton-mobile{
+        cursor: pointer;
         margin-left: 60px;
                 padding: 10px;
                justify-content: center;
@@ -651,6 +655,7 @@ top: 25%;
 
 }
 .booking-botton2{
+    cursor: pointer;
     padding: 13px;
     background: #C6B373;
     border-radius: 5px;
