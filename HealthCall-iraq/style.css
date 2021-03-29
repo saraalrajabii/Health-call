@@ -1,0 +1,711 @@
+* {
+    margin :0 ;
+    padding: 0;
+    }
+    body{
+      max-width: 1400px;
+      margin:  0 auto; 
+      display: grid; 
+    grid-template-columns: 2fr 20fr 2fr ;
+    
+    }
+    .flux{
+        display:flex;
+
+        justify-content: space-between;
+        max-width: 100%;
+        background-image: url("img/Group 142.png");
+        height: 750px;
+
+    }
+    .header{
+        /* display: grid;
+        grid-template-columns: 1fr 4fr  ; */
+        
+        direction :rtl;
+        background-color: #F7F8FA;
+        height: 100px;
+        max-width: 100%;
+    }
+
+    .first-container-grid{
+        display: grid; 
+        top:0px;
+        position: absolute;
+        place-items: center;
+        right:20%;
+        grid-template-columns: 1fr 5fr 1fr ;
+    }
+   
+  
+
+    .first-container{
+      
+        place-items: center;
+        display: grid;
+        grid-template-rows:     1fr 1fr 1fr 1fr;
+       max-height: 350px;
+    
+    
+
+}
+  
+.logo-1{
+
+    margin-top: 40px;
+    max-width: 130px;
+    margin-right: 50px;
+   }
+  
+   .title{
+    font-family: 'Almarai', sans-serif;
+    color:  #8F01AD;
+    font-size: 40px;
+    
+    }
+.description{
+    color: #7C8087;
+    font-family: 'Overpass', sans-serif;
+    font-size: 20px;
+    text-align: center;
+
+}
+.booking-botton{
+    cursor: pointer;
+    padding: 15px;
+    background: #471B6B;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Almarai', sans-serif;
+    border:none;
+    margin-bottom: 17px;
+    font-size: 18px;
+    
+
+}
+
+.booking{
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+  
+    background: #471B6B;
+    border-radius: 5px;
+    color: white;
+    border:none;
+    font-family: 'Almarai', sans-serif;
+    font-size: 15px;
+    align-items: center;
+    
+
+}
+
+.booking-div{
+    padding: 100px;
+    display: grid;
+    font-family: 'Almarai', sans-serif;
+    place-items: center;
+}
+.booking-botton2{
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+    background: #471B6B;
+    border-radius: 5px;
+    color: white;
+    border:none;
+    font-family: 'Almarai', sans-serif;
+    font-size: 18px;
+
+}
+
+.logo-eon{
+    width: 200px;
+    height: auto;
+  
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 839px) {
+    body{
+        grid-template-columns: 1fr;
+    }
+
+    .main-container-ele2{
+        display: none;
+    }
+    .main-container-ele3{
+        display: none;
+    }
+
+  
+
+    
+
+}
+.main-container-ele6{
+    position: relative;
+    direction: rtl;
+
+}
+.ovel{
+width :200px ;
+height:auto; 
+margin-right: 100px;
+position: absolute;
+}
+
+@media screen and (min-width: 839px) {
+
+}
+
+.second-container{
+    background-color: white;
+}
+.second-container-title{
+    color: #0E549A ;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Overpass', sans-serif;
+font-weight: bold;
+padding: 30px 0px 20px 0px;
+}
+
+.second-container-circle{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    text-align: center;
+ 
+}
+.circle{
+    width: 100%;
+    height: auto;
+}
+.second-container-circle-des{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family: 'Almarai', sans-serif;
+   /* align-items: end;
+   justify-content: end; */
+   direction :rtl;
+   /* text-align: end; */
+   padding-right: 50px;
+   font-size: 13px
+
+
+}
+
+.circle-des{
+color: #7C8087;
+align-items: end;
+justify-content: end;
+
+}
+.circle-des2{
+    color: #8F01AD;
+    align-items: end;
+    justify-content: end;
+    
+    }
+@media screen and (min-width: 839px) {
+.second-container-circle-des-mobile{
+    display: none;
+}
+}
+@media screen and (max-width: 839px) {
+    .second-container-circle{
+        display: grid; 
+        grid-template-columns: 1fr ;
+        width: 60%;
+        row-gap: 1em;
+        margin-left: 80px;
+        padding-top: 10px;
+     
+    }
+    .second-container-circle-des{
+        display: none;
+    
+    }
+    .second-container-circle-des-mobile{
+        direction :rtl;
+        padding: 20px 50px;
+        font-family: 'Almarai', sans-serif;
+    }
+ 
+}
+
+
+.second-container-question{
+    display: grid; 
+    grid-template-columns: 1fr 2fr 2fr 1fr  ;
+    padding-bottom: 30px;
+    grid-column-gap: 1em;
+}
+.question-image{
+width: 100%;
+height: 100%;
+}
+.question-title{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #8F01AD;
+    font-size: 40px;
+    font-family: 'Almarai', sans-serif;
+
+}
+.inner-grid{
+    display: grid; 
+    grid-template-columns: 1fr 7fr  ;
+    /* margin-left: 180px; */
+    /* padding-top: 20px; */
+}
+.true{
+    width: 30px;
+    height: auto;
+}
+.true-note{
+    color: #471B6B ;
+    font-weight: bold;
+    font-family: 'Almarai', sans-serif;
+}
+
+
+
+
+@media screen and (max-width: 839px) {
+    .second-container-question{
+        display: grid; 
+        grid-template-columns:  1fr ;
+        place-items: center;
+    }
+    .question-title{
+        padding-top: 60px;
+        color: #0E549A ;
+    margin-left: 0px;
+        font-size: 50px;
+        font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+    }
+    .inner-grid{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        direction :rtl;
+        grid-column-gap: 1em;
+     
+        justify-content: center;
+        align-items: center;
+    }
+    .question-image{
+        padding-top: 20px;
+        padding-bottom:20px ;
+        width: 100%;
+        height: auto;
+        }
+        .question-image-div{
+            padding: 20px;
+        }
+}
+
+
+
+.third-container{
+    background-color: #F7F8FA;
+    position: relative;
+    height: 600px;
+ 
+}
+
+
+.ovel-half{
+    width: 20%;
+    height: auto;
+  position: absolute;
+ right: 0;
+
+ }
+ .BG{
+ 
+    width: 80%;
+    /* font-size: 20px;
+    padding: 30px 0px 50px 30px; */
+    position: absolute;
+    left: 5%;
+    /* color:gray;
+    font-family: 'Almarai'; */
+    top: 25%;
+    background-color: #F7F8FA;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+ }
+
+ .inner-GB{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 2em;
+    direction :rtl;
+ }
+ .inner-GB-doctor{
+     width: 180px;
+   
+ }
+
+ .inner-GB-title{
+    color: #8F01AD;
+    font-size: 13px;
+    padding: 10px 10px 0px 0px;
+    line-height: 22px;
+    font-family: 'Almarai', sans-serif;
+    direction :rtl;
+ }
+ .inner-GB-description{
+    
+    font-size: 10px;
+    font-family: 'Almarai', sans-serif;
+    padding: 0px 10px 0px 0px;
+    direction :rtl;
+    line-height: 15px;
+    color: #7C8087;
+ }
+
+ .inner-paragragh{
+     background-color: white;
+     padding:40px;
+     margin-top: 40px;
+     color: #7C8087;
+     font-size: 13px;
+     font-family: 'Almarai', sans-serif;
+     max-height: 200px;
+    
+ }
+
+ .logo-withdoc{
+    position: absolute; 
+    width: 10%;
+    top:7%;
+    right:300px;
+
+ }
+
+
+ .doc-note2-mobile{
+     font-weight: bold;
+     font-family: 'Almarai';
+ }
+
+
+ .forth-container{
+     position: relative;
+  background-color: #8F01AD;
+  display: grid;
+  place-items: center;
+  height: 400px;
+  /* margin-bottom: 50px; */
+ 
+ }
+ .forth-container-title{
+    padding: 0px 0px 30px 0px ;
+    color: white;
+    font-family: 'Almarai', sans-serif;
+font-weight: bold;
+align-items: center;
+text-align: center;
+font-size: 40px;
+line-height: 1.6;
+
+ }
+ .Oval-Copy{
+position: absolute;
+left: 0px;
+width: 70px;
+bottom: 0px;
+
+ }
+ .main-container-ele4{
+    display: grid;
+    place-items: center;
+ }
+
+
+ @media screen and (min-width: 839px) {
+  .third-container-mobile{
+      display: none;
+  }
+   .question-title-mobile{
+    display: none;
+   }
+   .third-container-mobile-part22{
+    display: none;
+   }
+   .main-container-ele6-mobile{
+    display: none; 
+   }
+   .flux-mobile{
+    display: none;   
+   }
+   .inner-GB-mobile{
+    display: none; 
+   }
+  
+  
+  
+    }
+
+ @media screen and (max-width: 839px) {
+    .Oval-Copy{
+        width: 20%;
+     } 
+     .forth-container-title{
+        font-size: 30px;
+     }
+     .third-container{
+         display: none;
+     }
+     .third-container-mobile{
+      position: relative;
+      background-color: #F7F8FA;
+      height: 600px;
+    }
+    .ovel-half{
+        width: 50%;
+        height: auto;
+      position: absolute;
+     right: 0;
+    
+     }
+     .logo-withdoc-mobile{
+        position: absolute; 
+        width: 25%;
+        top:5%;
+        left:90px;
+     }
+     .booking-div{
+        display: none;  
+       }
+     .BG-mobile{
+        place-items: center;
+        position: absolute; 
+        border: 5px;
+        align-items: center;
+        font-family: 'Almarai', sans-serif;
+        width: 50%;
+        top:25%;
+        font-size: 15px;
+        padding: 30px;
+        display: grid;
+        grid-template-rows: 5fr 2fr;
+        background-color: white;
+        color: gray;
+        left: 20%;
+        direction :rtl;
+      
+     }
+
+
+     .inner-GB-mobile{
+         position: absolute;
+         bottom: 45px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        column-gap: 2px;
+        direction :rtl;
+
+     }
+     .inner-GB-doctor{
+        width: 150px;
+      
+    }
+ 
+     .DOC-description-mobile{
+        /* color: #979797;
+        position: absolute;
+        font-size: 18px;
+        width: 100%;
+        left: 50px;
+        top: 25%; */
+
+
+        color: #979797;
+position: absolute;
+font-size: 18px;
+width: 90%;
+left: 40px;
+top: 25%;
+     }
+     .Doc-mobile{
+        position: absolute;
+        width: 80%;
+        left: 40px;
+        bottom: 140px;
+          
+     }
+     .third-container-mobile-part22{
+         background-color: white;
+         position: relative;
+         height: 300px;
+         width: 100%;
+
+
+     }
+     .doc-note{
+   font-size: 18px;
+   top: 180px;
+            position: absolute; 
+            color: #8F01AD;
+            font-family: 'Almarai';
+     
+         }
+         .question-title{
+            display: none;
+           }
+           .question-title-mobile{
+            padding: 20px;
+            color: #8F01AD;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Almarai', sans-serif;
+        font-weight: bold;
+        }
+        .main-container-ele6{
+            display: none;
+        }
+        .main-container-ele6-mobile{
+          position: relative;
+           }
+        
+        .Ooval{
+            position: absolute;
+            padding-top: 5px;
+            width: 100px;
+            height: 140px;
+            right: 0;
+            top:-70px;
+        }
+  
+        .main-container{
+            display: none;
+                }
+
+       
+           
+            .flux{
+                display: none; 
+            }
+            .flux-mobile{
+               width: 100%;
+               background-image: url("img/Group 163.png");
+            height: 700px; 
+            }
+            .main-mobile{
+                width: 100%;
+            }
+             .first-container-mobile{
+                 padding-top: 40px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+               place-content: center;
+                max-height: 300px; 
+                
+         
+                display: grid; 
+                grid-template-columns: 1fr 7fr 1fr ;
+
+            } 
+            .logo{
+                width: 100px;
+           
+            }
+               
+    .title-mobile{
+        font-family: 'Almarai', sans-serif;
+        font-weight: bold;
+        padding: 10px;
+        color: #8F01AD;
+        font-size: 25px;
+        /* letter-spacing: -1px; */
+    }
+    .description-mobile{
+       
+        color: #7C8087;
+        font-family: 'Almarai', sans-serif;
+        text-align: center;
+        font-size: 20px;
+    }
+    .booking-botton-mobile1{
+        cursor: pointer;
+        padding: 13px;
+       justify-content: center;
+        background: #471B6B;
+        font-family: 'Almarai', sans-serif;
+        border-radius: 5px;
+        color: white;
+        margin-top: 20px;
+        font-size: 16px;
+        border:none
+    }
+    .booking-botton-mobile{
+        cursor: pointer;
+        margin-top: 40px;
+        font-family: 'Almarai', sans-serif;
+                padding: 13px;
+               justify-content: center;
+                background:  #471B6B;;
+                border-radius: 5px;
+                color: white;
+                border:none;
+                font-size: 16px;
+            }
+    .logo-eon{
+        padding: 20px;
+        width: 130px;
+        height: auto; 
+    
+        
+    }
+    .first-container-mobile1{
+        width: 20%;
+    }
+    .first-container-mobile2{
+        width: 25%;
+    }
+        
+    .aligner2{
+        position: absolute;
+        top:450px;
+        width: 160px;
+}
+.aligner{
+    position: absolute;
+    width: 120px;
+    top:260px;
+  right: 0%;
+
+}
+.booking-botton2{
+    cursor: pointer;
+    padding: 13px;
+   
+    border-radius: 5px;
+    color: white;
+    border:none;
+
+    font-size: 16px;
+
+}
+.main-container-ele4{
+    display: grid;
+    place-items: center;
+}
+.circle-des{
+    padding-bottom: 7px;
+}
+.header{
+    display: none;
+}
+
+
+ }
