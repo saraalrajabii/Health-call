@@ -80,12 +80,15 @@ $(function () {
     })
     $('#form').submit(async function (e) {
         e.preventDefault();
+        var  url=window.location.search
+        var totalUrl = url.slice(1);
+        console.log(totalUrl)
         const nameValue = $("#name-input").val();
         const selected = $('.custom-option.selected').data('value');
         const contactInputValue = $('[id$=contact-input]').val()
         let object = {
             name: nameValue,
-            contactMethod: `${selected} ${contactInputValue} - Clinic : Asnankom - Iraq`,
+            contactMethod: `${selected} ${contactInputValue} - Clinic : Asnankom - Iraq - ${totalUrl}`,
         };
         let response = await fetch(
             "https://gwhb7l31r0.execute-api.eu-central-1.amazonaws.com/default/clinicsMailerFunction",
@@ -125,7 +128,7 @@ $(function () {
             $(".contact-input-div").show()
             // $('[id$=contact-label]').text("واتس اب");
             $("#defult").remove(); 
-            $('[id$=contact-input]').attr("placeholder", "+962-xxxxxxxxxx");
+            $('[id$=contact-input]').attr("placeholder", "+964-xxxxxxxxxx");
             $('#contact-input').get(0).type = "tel"
             $('[id$=contact-input]').val('');
             $('[id$=contact-input]').css('direction', 'ltr');
@@ -135,7 +138,7 @@ $(function () {
             $(".contact-input-div").show()
             // $('[id$=contact-label]').text("رقم الهاتف");
             $("#defult").remove(); 
-            $('[id$=contact-input]').attr("placeholder", "+962-xxxxxxxxxx");
+            $('[id$=contact-input]').attr("placeholder", "+964-xxxxxxxxxx");
             $('[id$=contact-input]').css('direction', 'ltr');
             $('[id$=contact-input]').css('text-align', 'end');
             $('#contact-input').get(0).type = "tel"

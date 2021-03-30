@@ -19,22 +19,29 @@
   margin: 5% auto;
   border: 1px solid #888;
   border-radius: 10px;
-  width: 90%;
+  width: 60%;
+  text-align: center;
   max-width: 580px;
   min-width: 30px;
   /* mobile */
 }
-
+.image_header_countaner img {
+  width: 50%;
+  border-radius: 10px;
+}
 @media only screen and (max-width: 930px) {
   .model-content {
-    width: 90%;
+    width: 80%;
     max-width: 580px;
   }
 }
 
-.image_header_countaner img {
-  width: 100%;
-  border-radius: 10px;
+
+@media only screen and (max-width:400px) {
+  .image_header_countaner img {
+    width: 80%;
+    border-radius: 10px;
+  }
 }
 
 .form-grid {
@@ -366,6 +373,7 @@ input[type="tel"],
   font-size: 2em;
   cursor: pointer;
   padding-right: 30px;
+  text-align: right;
   line-height: 2;
 }
 
