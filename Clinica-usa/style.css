@@ -110,7 +110,7 @@
         text-align: center;
         font-style: normal;
         font-weight: normal;
-        font-size: 65px;
+        font-size: 40px;
         line-height: 64px;
         font-family: 'Poppins', sans-serif;
         text-align: center;
@@ -201,7 +201,7 @@
 
     .circle-title1{
         padding-top: 20px;
-        font-size: 35px;
+        font-size: 30px;
         line-height: 35px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
@@ -210,7 +210,7 @@
        
     }
     .circle-title11{
-        font-size: 35px;
+        font-size: 30px;
         padding-top: 20px;
         line-height: 35px;
         text-align: center;
@@ -258,6 +258,7 @@
         color: #7C8087;
         line-height: 64px;
         font-family: 'Poppins', sans-serif;
+        padding-top: 20px;
         text-align: center;
     }
     .container2{
@@ -328,6 +329,7 @@ padding-top: 20px;
         border-radius: 5px;
         color: #7C8087;
         padding: 10px 30px;
+        cursor: pointer;
         border: none;
         align-items: center;
         font-family: 'Poppins', sans-serif;
@@ -594,7 +596,7 @@ height: auto;
     }
     .main-grid-mobile-image{
         width: 236px;
-        height: 164px;
+        height: auto;
     }
     .description-mobile{
     color: #7C8087;
@@ -666,6 +668,7 @@ place-items: center;
     color: #7C8087;
     line-height: 20px;
   text-align: center;
+  padding-top: 30px;
     font-size: 18px;
      font-weight: bold;
      font-family: 'Poppins', sans-serif;   

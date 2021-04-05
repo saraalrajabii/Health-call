@@ -26,7 +26,7 @@ function validateRegister() {
 	    return false;
     }
     else if (contactInput == null || contactInput == '' || contactInput ==undefined) {
-        $('#regisErr').addClass('error').text('Please fill in the informatio');
+        $('#regisErr').addClass('error').text('Phone number required');
 	    $('.custom-select__trigger').focus();
 	    return false;
     }
@@ -35,11 +35,13 @@ function validateRegister() {
 	    $('.custom-select__trigger').focus();
 	    return false;
     }
-    else if (contactType == "tel" && !phoneReq.test(contactInput)) {
-        $('#regisErr').addClass('error').text('Please add a valid phone number');
-	    $('.custom-select__trigger').focus();
-	    return false;
-    }
+
+   
+    // else if (contactType == "tel"&& !phoneReq.test(contactInput) ) {
+    //     $('#regisErr').addClass('error').text('Phone Number Required');
+	//     $('.custom-select__trigger').focus();
+	//     return false;
+    // }
     else {
         $('.errorBlock').hide()
     }	
@@ -92,10 +94,11 @@ $(function () {
         }, 500);
     });
     $('#form').submit(async function (e) {
+    
         e.preventDefault();
         var  url=window.location.search
         var totalUrl = url.slice(1);
-        console.log(totalUrl)
+        // console.log(totalUrl)
         const nameValue = $("#name-input").val();
         const selected = $('.custom-option.selected').data('value');
         const contactInputValue = $('[id$=contact-input]').val()
