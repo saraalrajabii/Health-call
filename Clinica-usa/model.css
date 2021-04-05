@@ -1,0 +1,453 @@
+/* desktop/laptop/tablet */
+.model {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+  }
+  input::placeholder {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .model-content {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    background-color: #fefefe;
+    margin: 5% auto;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+    
+    max-width: 480px;
+    min-width: 30px;
+    /* mobile */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .model-content {
+      width: 90%;
+      max-width: 580px;
+    }
+  }
+  
+  .form-grid {
+    /* display: grid;
+    grid-template-columns: 0.5fr 0.5fr; */
+    padding-bottom:10px;
+    /* mobile */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .form-grid {
+      grid-template-columns: 1fr;
+      justify-self: center;
+    }
+  }
+  
+  .form-grid .image_holder {
+    grid-column:1 ;
+    grid-row: 1;
+    /* mobile */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .form-grid .image_holder {
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  
+  .form-grid .image_holder img {
+    width: 40%;
+    border-radius: 15px;
+    transform: translateX(0px);
+    /* mobile */
+    /* ipad pro*/
+    /* glaxy fold */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .form-grid .image_holder img {
+      transform: translateX(0px);
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .form-grid .image_holder img {
+      transform: translateX(0px);
+    }
+  }
+  
+  @media only screen and (max-width: 321px) {
+    .form-grid .image_holder img {
+      transform: translateX(0px);
+      grid-column: 1;
+      grid-row: 1;
+    }
+  }
+  
+  .form-grid form {
+    align-self: center;
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 1;
+    /* padding-right: 50px; */
+    /* mobile */
+    /* ipad pro*/
+    /* galaxy fold */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .form-grid form {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: center;
+      justify-self: center;
+      padding-right: 0px;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .form-grid form {
+      align-self: center;
+      justify-self: center;
+    }
+  }
+  
+  @media only screen and (max-width: 281px) {
+    .form-grid form {
+      padding-right: 40px;
+    }
+  }
+  
+  input[type="text"],
+  input[type='email'],
+  input[type="tel"],
+  select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 18px 0px 8px 0px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* mobile */
+    /* glaxy fold */
+    /* ipad pro*/
+  }
+  
+  input[type="text"]:focus,
+  input[type='email']:focus,
+  input[type="tel"]:focus,
+  select:focus {
+    outline: none;
+    border: 1px solid #A48747;
+  }
+  
+  @media only screen and (max-width: 930px) {
+    input[type="text"],
+    input[type='email'],
+    input[type="tel"],
+    select {
+      width: 40%;
+    }
+  }
+  
+  @media only screen and (max-width: 281px) {
+    input[type="text"],
+    input[type='email'],
+    input[type="tel"],
+    select {
+      width: 55%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    input[type="text"],
+    input[type='email'],
+    input[type="tel"],
+    select {
+      width: 50%;
+    }
+  }
+  
+  input[type="text"],
+  input[type='email'],
+  input[type="tel"],
+  .big-dog::-webkit-input-placeholder {
+    font-size: 22px;
+    /* mobile */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    input[type="text"],
+    input[type='email'],
+    input[type="tel"],
+    .big-dog::-webkit-input-placeholder {
+      font-size: 16px;
+    }
+  }
+  
+  .contact-input-div {
+    display: none;
+width: 100%;
+    place-items: center;
+  }
+  
+  .custom-select-wrapper {
+    position: relative;
+    user-select: none;
+    width: 50%;
+    /* mobile */
+    /* ipad pro*/
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .custom-select-wrapper {
+      width: 60%;
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .custom-select-wrapper {
+      width: 50%;
+    }
+  }
+  
+  .custom-select {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* galaxy fold */
+  }
+  
+  .custom-select:active {
+    outline: none;
+    border: 1px solid #A48747;
+  }
+  
+  @media only screen and (max-width: 281px) {
+    .custom-select {
+      width: 75%;
+    }
+  }
+  
+  .custom-select__trigger {
+    position: relative;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: 300;
+    color: black;
+    opacity: 0.6;
+    height: 60px;
+   
+    background: #ffffff;
+    cursor: pointer;
+    
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+    /* mobile */
+    /* galaxy fold */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .custom-select__trigger {
+      font-size: 16px;
+      padding: 0 25px;
+    }
+  }
+  
+  @media only screen and (max-width: 281px) {
+    .custom-select__trigger {
+      font-size: 16px;
+      padding: 0 20px;
+    }
+  }
+  
+  .custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    right: 0;
+    border: 2px solid #A48747;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+  }
+  
+  .custom-select.open .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  
+
+
+  
+  .custom-option {
+    position: relative;
+    display: block;
+    padding: 0 22px 0 22px;
+    font-size: 22px;
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .custom-option {
+      font-size: 16px;
+    }
+  }
+  
+  .custom-option:hover {
+    cursor: pointer;
+    background-color: #b2b2b2;
+  }
+  
+  .custom-option.selected {
+    color: #ffffff;
+    background-color: #A48747;
+  }
+  
+  .arrow {
+    position: relative;
+    height: 15px;
+    width: 15px;
+    /* mobile */
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .arrow {
+      height: 15px;
+      width: 15px;
+    }
+  }
+  
+  .arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+  }
+  
+  .arrow::before {
+    left: -5px;
+    transform: rotate(-45deg);
+    background-color: #A48747;
+  }
+  
+  .arrow::after {
+    left: 5px;
+    transform: rotate(45deg);
+    background-color: #A48747;
+  }
+  
+  .open .arrow::before {
+    left: -5px;
+    transform: rotate(45deg);
+  }
+  
+  .open .arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+  }
+  
+  .btn-grid {
+    margin-top: 18px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+  }
+  .grid1{
+display: grid;
+place-items: center;
+  }
+  .submit-btn {
+    background-color: #A48747;
+    color: white;
+    font-size: 15px;
+    border-radius: 12px;
+    padding: 10px 15px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 25%;
+    justify-self: center;
+ 
+
+  }
+  
+  @media only screen and (max-width: 321px) {
+    .submit-btn {
+      font-size: 10px;
+      border-radius: 12px;
+      padding: 13px 20px;
+    }
+  }
+  
+  .close {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    cursor: pointer;
+    padding-right: 30px;
+    line-height: 2;
+  }
+  
+  @media only screen and (max-width: 930px) {
+    .close {
+      padding-right: 20px;
+    }
+  }
+  
+  .thankyouPage {
+    display: none;
+    font-size: 20px;
+    text-align: center;
+    color: #797979;
+    background-color: #fefefe;
+    place-self: center;
+    width: auto;
+    padding-right: 70px;
+  }
+  
+  .errorBlock {
+    margin: 20px 0 0;
+    text-align: center;
+    /* width: 50%;
+    align-items: center; */
+  }
+  
+  .error {
+    font-size: 14px;
+  }
+  
+  .error {
+    border: 1px dashed red;
+    color: red;
+    padding: 5px 5px;
+  }
+  /*# sourceMappingURL=model.css.map */
+
